@@ -1,4 +1,4 @@
-
+//Autor: Moacir josé
 import java.util.Scanner;
 
  // classe Cliente.
