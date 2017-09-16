@@ -15,7 +15,7 @@ public class Cliente {
 		Scanner entrada = new Scanner(System.in);
 		
 		
-		//contrutor de Cliente
+           // construtor
 		public Cliente( String cpf, String email,String endereco, int dataDeNascimento, int telefone ){
 			this.cpf= cpf;
 			this.email= email;
