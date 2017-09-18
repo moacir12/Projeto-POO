@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//Classe Esporte
+//Classe Show
 
 public class Show {
 	//Atributos
@@ -18,7 +18,7 @@ public class Show {
 		this.estilo= estilo;
 	}
 
-//  dados do esporte
+//  dados do Show
 		String getDados(){
 			return "\n\nTipo de show:\n\nNome : " + this.nome + "\nArtista: " + this.artista + "\n estilo:" + this.estilo;
 		}	
