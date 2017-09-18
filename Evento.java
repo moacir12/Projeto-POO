@@ -28,7 +28,7 @@ Scanner entrada = new Scanner(System.in);
 	
 	
 	//Metados
-/*	void mostraEvento(){
+	void mostarEvento()
 		
 		
 	}
@@ -38,7 +38,7 @@ Scanner entrada = new Scanner(System.in);
 	}
 	void mostrarDescontoPorCompraAntercipada(){
 		
-	}*/
+	}
 		
 		
 		
