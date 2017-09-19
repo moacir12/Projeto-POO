@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 
   //Classe que chamada os métodos 
@@ -7,11 +9,24 @@
 public class Principal {
 
 	public static void main(String[] args) {
-		Cliente c = new Cliente( "175.678.543-06", "jose@gmailcom", 
-				 "Rua Rio de Janeiro 501", 22121980, 987380045);
+		Cliente cl = new Cliente(null, null, null, 0, 0);
+		cadastrarCliente(cl); 
 		
-
-		//verificar dados:
-		System.out.println(c.getDados());
+	}
+	private static void cadastrarCliente(Cliente cl){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("informe cpf");
+		String cpf = sc.next();
+		System.out.println("informe email");
+		String email = sc.next();
+		System.out.println("informe endereco");
+		String endereco = sc.next();
+		System.out.println("informe dataDeNascimento");
+		int dataDeNascimento = sc.nextInt();
+		System.out.println("informe telefone");
+		int telefone = sc.nextInt();
+		
 	}
 }
+
+		
