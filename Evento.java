@@ -1,58 +1,95 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
-// classe Evento.
-public class Evento {
+public abstract class Evento {
 	//Atributos
-	private String descricao;
+	private String nome;
+	protected String descricao;
 	private String dataEvento;
 	private String horaEvento;
 	private String sinopse;
-	private String elenco;
+	protected String elenco;
+	private ArrayList<Ingresso> ingressos;
 	
-Scanner entrada = new Scanner(System.in);
+	Scanner entrada = new Scanner(System.in);
 	
-	
-	//contrutor de evento
-	public Evento(String descricao, String dataEvento, String horaEvento, String sinopse,String elenco){
-		this.descricao= descricao;
-		this.dataEvento=dataEvento;
-		this.horaEvento= horaEvento;
-		this.sinopse=sinopse;
-		this.elenco=elenco;
+	public Evento(String nome, String descricao, String dataEvento, String horaEvento, String sinopse, String elenco){
+		this.nome = nome;
+		this.descricao = descricao;
+		this.dataEvento = dataEvento;
+		this.horaEvento = horaEvento;
+		this.sinopse = sinopse;
+		this.elenco = elenco;
+		
 	}
 
-	//  Dados  do evento
-		String getDados(){
-			return "Dados do evento:\n \nDescricao: " + this.descricao + "\n DataEvento: " + this.dataEvento + "\n Horário: " + this.horaEvento +"\n Sinopse "+ this.sinopse +"\n Elenco: " + this.elenco;
-		}	
+//  dados do Evento
+	public String getNome(){
+		return nome;
+	}
 	
+	public void setNome(String nome){
+		this.nome = nome;
+	}
 	
+	public String getDescricao(){
+		return descricao;
+	}
+	
+	public void setDescricao(String descricao){
+		this.descricao = descricao;
+	}
+	
+	public String getData(){
+		return dataEvento;
+	}
+	
+	public void setData(String dataEvento){
+		this.dataEvento = dataEvento;
+	}
+	
+	public String getHora(){
+		return horaEvento;
+	}
+	
+	public void setHora(String horaEvento){
+		this.horaEvento = horaEvento;
+	}
+	
+	public String getSinopse(){
+		return sinopse;
+	}
+	
+	public void setSinopse(String sinopse){
+		this.sinopse = sinopse;
+	}
+	
+	public String getElenco (){
+		return elenco;
+	}
+	
+	public void setElenco(String elenco){
+		this.elenco = elenco;
+	}
+	
+	public ArrayList<Ingresso> getIngressos(){
+		return ingressos; 
+	}
 	//Metados
-	void mostarEvento()
-		
+	
+	void mostrarEvento(){
 		
 	}
+	
 	void pesquisarEvento(){
 		
-		
-	}
-	void mostrarDescontoPorCompraAntercipada(){
-		
-	}
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
 	}
 	
-	
+	void mostrarDescontoPorCompraAntecipada(){
+		
+	}
+}
+
 	
 	
 	
