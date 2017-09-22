@@ -1,23 +1,43 @@
 import java.util.Scanner;
-//Autor Moacir
-public class Filme {
-	//Atributos
+
+class Filmes extends Evento{
+	public Filmes(String nome, String descricao, String dataEvento,
+			String horaEvento, String sinopse, String elenco) {
+		super(nome, descricao, dataEvento, horaEvento, sinopse, elenco);
+			}
+
+	
 	private String nomeDoFilme;
 	private int censura;
 	private String genero;
 	
 	Scanner entrada = new Scanner(System.in);
-	
-	public Filme(String nomeDoFilme, int censura, String genero){
+
+	public String getNomeDoFilme() {
+		return nomeDoFilme;
+	}
+
+	public void setNomeDoFilme(String nomeDoFilme) {
 		this.nomeDoFilme = nomeDoFilme;
+	}
+
+	public int getCensura() {
+		return censura;
+	}
+
+	public void setCensura(int censura) {
 		this.censura = censura;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 	
-	//  dados do Filme
-	String getDados(){
-		return "\n\nDados do filme:\n\nNome do filme: " + this.nomeDoFilme + "\nFaixa de idade para assistir o filme: " + this.censura + "\nGenero do filme: " + this.genero;
-		}
+	
 	
 	//Metodos
 	
@@ -28,4 +48,5 @@ public class Filme {
 	void pesquisarCinema(){
 		
 	}
+
 }
