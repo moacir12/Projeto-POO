@@ -1,31 +1,59 @@
 import java.util.Scanner;
 //Autor Moacir
-public class Peça {
+
+class Peça extends Evento{
+	public Peça(String nome, String descricao, String dataEvento,
+			String horaEvento, String sinopse, String elenco) {
+		super(nome, descricao, dataEvento, horaEvento, sinopse, elenco);
+			}
+
 	//Atributos
-	private String nomeDaPeca;
+	private String nomePeca;
 	private String companhia;
 	private String genero;
 	
-	Scanner entrada = new Scanner(System.in);
 	
-	public void Peca(String nomeDaPeca,String companhia, String genero){
-		this.nomeDaPeca = nomeDaPeca;
+	//metodos
+	
+	public String getNomePeca() {
+		return nomePeca;
+	}
+
+	public void setNomePeca(String nomePeca) {
+		this.nomePeca = nomePeca;
+	}
+
+	public String getCompanhia() {
+		return companhia;
+	}
+
+	public void setCompanhia(String companhia) {
 		this.companhia = companhia;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	
-	//  dados do Peça
-	String getDados(){
-		return "\n\nDados da peça:\n\nNome do peça: " + this.nomeDaPeca+ "\nCompahia: " + this.companhia + "\nGenero: " + this.genero;
-		}
-	
-	//Metodos
-	
+
 	void registrarTeatro(){
 		
 	}
-
+	
 	void pesquisarTeatro(){
-		
+	
 	}
+	
+	//Metodos
+	
+		void registrarPeca(){
+			
+		}
+
+		void pesquisarPeca(){
+			
+		}
 }
