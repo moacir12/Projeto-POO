@@ -16,7 +16,7 @@ public class Principal{
 		clientes.add(c1);
 		System.out.println(c1);
 		
-		Ambiente a1 = new Ambiente("vila forro", 10 ,"Rua: sem nome","sem nome","sem ref",10000);
+		Ambiente a1 = new Estadio("vila forro", 10 ,"Rua: sem nome","sem nome","sem ref",10000);
 		 ambientes.add(a1);
 		System.out.println(a1);	
 		
