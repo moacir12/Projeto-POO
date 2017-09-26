@@ -7,7 +7,7 @@ public class Principal{
 	public static void main(String[] args) {
 		ArrayList<Cliente> clientes = new ArrayList<>();
 		ArrayList<Evento> eventos = new ArrayList<>();
-		ArrayList<Ambientes> ambientes = new ArrayList<>();
+		ArrayList<Ambiente> ambientes = new ArrayList<>();
 		
   		Cliente c1 = new Cliente( "897.7855.655-06", "moacir@gmailcom", 
 				 "Rua Rio de Janeiro, 501", 2218764, 98765, "moacir", 12345);
